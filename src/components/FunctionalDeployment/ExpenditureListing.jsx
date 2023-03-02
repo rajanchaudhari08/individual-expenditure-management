@@ -1,6 +1,6 @@
 import "../FunctionalDeployment/ExpenditureListing.css";
 import ExpenditureDate from "../FunctionalDeployment/ExpenditureDate";
-function ExpenditureListing(properties) {
+const ExpenditureListing = (properties) => {
   // const expenseDate = new Date(2023, 3, 1);
   // const expenseTitle = "Car Insurance";
   // const expensePrice = "$294.67";
@@ -18,5 +18,5 @@ function ExpenditureListing(properties) {
       </div>
     </div>
   );
-}
+};
 export default ExpenditureListing;

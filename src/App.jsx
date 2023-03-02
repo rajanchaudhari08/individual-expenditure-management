@@ -1,5 +1,5 @@
 import ExpenseListing from "./components/FunctionalDeployment/ExpenseListing";
-function App() {
+const App = () => {
   const expenseList = [
     {
       id: "expenseID1",

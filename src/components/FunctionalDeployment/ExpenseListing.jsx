@@ -2,7 +2,7 @@ import ExpenditureListing from "../FunctionalDeployment/ExpenditureListing";
 import "../FunctionalDeployment/ExpenseListing.css";
 import CardContainer from "../UserInterface/CardContainer";
 
-function ExpenseListing(properties) {
+const ExpenseListing = (properties) => {
   return (
     <CardContainer className="expenses">
       <ExpenditureListing
@@ -27,5 +27,5 @@ function ExpenseListing(properties) {
       />
     </CardContainer>
   );
-}
+};
 export default ExpenseListing;
