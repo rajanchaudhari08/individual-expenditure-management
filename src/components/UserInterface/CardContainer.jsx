@@ -1,4 +1,4 @@
-import "./CardContainer.css";
+import "../UserInterface/CardContainer.css";
 
 function CardContainer(properties) {
   const class__CardContainer = `card ${properties.className}`;

@@ -1,4 +1,4 @@
-import ExpenseListing from "./components/ExpenseListing";
+import ExpenseListing from "./components/FunctionalDeployment/ExpenseListing";
 function App() {
   const expenseList = [
     {
@@ -31,6 +31,11 @@ function App() {
       <ExpenseListing expenseItem={expenseList} />
     </div>
   );
+  /* For reference
+  return (
+    "div", React.createElement(ExpenseListing, { expenseItem: expenseList })
+  );
+  */
 }
 
 export default App;

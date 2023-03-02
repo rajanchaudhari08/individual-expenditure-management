@@ -1,5 +1,5 @@
-import "./ExpenditureListing.css";
-import ExpenditureDate from "./ExpenditureDate";
+import "../FunctionalDeployment/ExpenditureListing.css";
+import ExpenditureDate from "../FunctionalDeployment/ExpenditureDate";
 function ExpenditureListing(properties) {
   // const expenseDate = new Date(2023, 3, 1);
   // const expenseTitle = "Car Insurance";

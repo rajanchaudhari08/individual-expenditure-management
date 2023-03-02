@@ -1,6 +1,6 @@
-import ExpenditureListing from "./ExpenditureListing";
-import "./ExpenseListing.css";
-import CardContainer from "./CardContainer";
+import ExpenditureListing from "../FunctionalDeployment/ExpenditureListing";
+import "../FunctionalDeployment/ExpenseListing.css";
+import CardContainer from "../UserInterface/CardContainer";
 
 function ExpenseListing(properties) {
   return (

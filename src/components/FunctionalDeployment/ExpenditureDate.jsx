@@ -1,4 +1,4 @@
-import "./ExpenditureDate.css";
+import "../FunctionalDeployment/ExpenditureDate.css";
 function ExpenditureDate(properties) {
   const month = properties.date.toLocaleString("en-US", { month: "long" });
   const day = properties.date.toLocaleString("en-US", { day: "2-digit" });
