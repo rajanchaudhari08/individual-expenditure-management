@@ -1,4 +1,6 @@
 import ExpenseListing from "./components/FunctionalDeployment/ExpenseListing";
+import InputExpense from "./components/UserInteraction/InputExpense";
+
 const App = () => {
   const expenseList = [
     {
@@ -26,8 +28,15 @@ const App = () => {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  const saveExpenseDataHandler = (expenseObjectValue) => {
+    // console.log("Inclusion in App.jsx");
+    console.log(expenseObjectValue);
+  };
+
   return (
     <div>
+      <InputExpense onSaveExpenseData={saveExpenseDataHandler} />
       <ExpenseListing expenseItem={expenseList} />
     </div>
   );
@@ -36,6 +45,6 @@ const App = () => {
     "div", React.createElement(ExpenseListing, { expenseItem: expenseList })
   );
   */
-}
+};
 
 export default App;
