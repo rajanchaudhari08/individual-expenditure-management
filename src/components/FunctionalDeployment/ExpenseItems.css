@@ -1,0 +1,9 @@
+.expenses-item {
+  list-style: none;
+  padding: 0;
+}
+
+.expenses-item__fallback {
+  color: white;
+  text-align: center;
+}

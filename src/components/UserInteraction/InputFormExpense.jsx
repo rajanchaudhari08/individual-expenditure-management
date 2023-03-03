@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const InputFormExpense = (properties) => {
   const [inputText, setInputText] = useState("");
-  const [inputNumber, setInputNumber] = useState(null);
+  const [inputNumber, setInputNumber] = useState("");
   const [inputDate, setInputDate] = useState("");
 
   /* For reference */
@@ -84,7 +84,7 @@ const InputFormExpense = (properties) => {
       date: new Date(inputDate),
     };
 
-    console.log(expenseData);
+    // console.log(expenseData);
     properties.onUpdateExpenseData(expenseData);
     
     setInputText("");

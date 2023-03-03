@@ -1,8 +1,9 @@
 import ExpenseListing from "./components/FunctionalDeployment/ExpenseListing";
 import InputExpense from "./components/UserInteraction/InputExpense";
+import { useState } from "react";
 
 const App = () => {
-  const expenseList = [
+  const initial__expenseList = [
     {
       id: "expenseID1",
       title: "Toilet Paper",
@@ -19,7 +20,7 @@ const App = () => {
       id: "expenseID3",
       title: "Car Insurance",
       price: 294.67,
-      date: new Date(2021, 3, 28),
+      date: new Date(2022, 3, 28),
     },
     {
       id: "expenseID4",
@@ -29,9 +30,14 @@ const App = () => {
     },
   ];
 
-  const saveExpenseDataHandler = (expenseObjectValue) => {
+  const [expenseList, setExpenseList] = useState(initial__expenseList);
+
+  const saveExpenseDataHandler = (expense) => {
     // console.log("Inclusion in App.jsx");
-    console.log(expenseObjectValue);
+    // console.log(expenseObjectValue);
+    setExpenseList((previousExpense) => {
+      return [expense, ...previousExpense];
+    });
   };
 
   return (
