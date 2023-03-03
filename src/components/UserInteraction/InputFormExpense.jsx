@@ -80,7 +80,7 @@ const InputFormExpense = (properties) => {
 
     const expenseData = {
       title: inputText,
-      price: inputNumber,
+      price: +inputNumber,
       date: new Date(inputDate),
     };
 
