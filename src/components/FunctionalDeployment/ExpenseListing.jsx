@@ -4,6 +4,7 @@ import "../FunctionalDeployment/ExpenseListing.css";
 import CardContainer from "../UserInterface/CardContainer";
 import FilterExpense from "./FilterExpense";
 import ExpenseItems from "./ExpenseItems";
+import ChartExpense from "../FunctionalDeployment/ChartExpense";
 
 const ExpenseListing = (properties) => {
   const [filterbyYear, setFilterbyYear] = useState("2020");
@@ -24,6 +25,7 @@ const ExpenseListing = (properties) => {
           selected={filterbyYear}
           onChangeFilter={filterChangeHandler}
         />
+        <ChartExpense expenses={filterExpenseItem} />
         <ExpenseItems items={filterExpenseItem} />
         {/* {expenseContent} */}
         {/* {properties.expenseItem.map((expense) => (
